@@ -63,7 +63,7 @@ true;
   loadVideoById: (videoId, play) => {
     const func = play ? 'loadVideoById' : 'cueVideoById';
 
-    return `player.${func}({videoId: ${JSON.stringify(videoId)}}); true;`;
+    return `player.${func}(${JSON.stringify(videoId)}, 5); true;`;
   },
 };
 
